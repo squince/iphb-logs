@@ -1,7 +1,7 @@
 {
   "name": "iphb-logs",
   "version": "0.0.0",
-  "description": "",
+  "description": "Log Helper",
   "main": "logs.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Beginnerprise/iphb-logs/issues"
   },
-  "homepage": "https://github.com/Beginnerprise/iphb-logs"
+  "homepage": "https://github.com/Beginnerprise/iphb-logs",
+  "dependencies": {
+    "colors": "^1.1.2"
+  },
+  "devDependencies": {}
 }
