@@ -1,0 +1,19 @@
+{
+  "name": "iphb-logs",
+  "version": "0.0.0",
+  "description": "",
+  "main": "logs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Beginnerprise/iphb-logs.git"
+  },
+  "author": "Benjamin Hudgens",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Beginnerprise/iphb-logs/issues"
+  },
+  "homepage": "https://github.com/Beginnerprise/iphb-logs"
+}
