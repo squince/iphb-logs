@@ -1,6 +1,6 @@
 {
   "name": "iphb-logs",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Log Helper",
   "main": "logs.js",
   "scripts": {
