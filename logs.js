@@ -31,6 +31,7 @@ var log = {
   enable: {
     logging: false,
     debug: false,
+    verbose: false,
     warn: true,
     input: true,
     info: true,
@@ -66,7 +67,7 @@ var log = {
     if (!this.enable.debug || !this.enable.logging) {
       return;
     }
-    console.log.apply(console, this.sanitizeArgs(arguments, colors.debug, '[Debug]'));
+    console.log.apply(console, this.sanitizeArgs(arguments, colors.debug, '[Debug]  '));
   },
   /**
    * @function error
@@ -76,7 +77,7 @@ var log = {
     if (!this.enable.error || !this.enable.logging) {
       return;
     }
-    console.error.apply(console, this.sanitizeArgs(arguments, colors.error, '[Error]'));
+    console.error.apply(console, this.sanitizeArgs(arguments, colors.error, '[Error]  '));
   },
   /**
    * @function warn
@@ -86,7 +87,7 @@ var log = {
     if (!this.enable.warn || !this.enable.logging) {
       return;
     }
-    console.log.apply(console, this.sanitizeArgs(arguments, colors.warn, '[Warn] '));
+    console.log.apply(console, this.sanitizeArgs(arguments, colors.warn, '[Warn]   '));
   },
   /**
    * @function input
@@ -96,7 +97,17 @@ var log = {
     if (!this.enable.input || !this.enable.logging) {
       return;
     }
-    console.log.apply(console, this.sanitizeArgs(arguments, colors.input, '[Input]'));
+    console.log.apply(console, this.sanitizeArgs(arguments, colors.input, '[Input]  '));
+  },
+  /**
+   * @function verbose
+   * @abstract Verbose Log Output
+   */
+  verbose: function() {
+    if (!this.enable.verbose || !this.enable.logging) {
+      return;
+    }
+    console.log.apply(console, this.sanitizeArgs(arguments, colors.verbose, '[Verbose]'));
   },
   /**
    * @function info
@@ -106,7 +117,7 @@ var log = {
     if (!this.enable.info || !this.enable.logging) {
       return;
     }
-    console.log.apply(console, this.sanitizeArgs(arguments, colors.info, '[Info] '));
+    console.log.apply(console, this.sanitizeArgs(arguments, colors.info, '[Info]   '));
   }
 };
 
