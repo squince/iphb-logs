@@ -14,7 +14,7 @@ colors.setTheme({
   data: 'grey',
   help: 'cyan',
   warn: 'yellow',
-  debug: 'red',
+  debug: 'yellow',
   error: 'red'
 });
 
