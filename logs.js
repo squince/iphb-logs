@@ -11,7 +11,7 @@ colors.setTheme({
   verbose: 'cyan',
   prompt: 'grey',
   info: 'green',
-  data: 'grey',
+  data: 'blue',
   help: 'cyan',
   warn: 'yellow',
   debug: 'white',
@@ -118,6 +118,16 @@ var log = {
       return;
     }
     console.log.apply(console, this.sanitizeArgs(arguments, colors.info, '[Info]   '));
+  },
+  /**
+   * @function data
+   * @abstract Data Log Output
+   */
+  data: function() {
+    if (!this.enable.data || !this.enable.logging) {
+      return;
+    }
+    console.log.apply(console, this.sanitizeArgs(arguments, colors.data, '[Data]   '));
   }
 };
 
