@@ -35,6 +35,7 @@ var log = {
     warn: true,
     input: true,
     info: true,
+    data: true,
     error: true
   },
   /**
