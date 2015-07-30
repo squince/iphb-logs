@@ -29,7 +29,7 @@ var log = {
    * @type {Object}
    */
   enable: {
-    logging: false,
+    logging: true,
     debug: false,
     verbose: false,
     warn: true,
