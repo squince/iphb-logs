@@ -131,7 +131,7 @@ var log = {
     if (!this.enable.tests) {
       return;
     }
-    console.log.apply(console, this.sanitizeArgs(arguments, colors.success, '[Success]   '));
+    console.log.apply(console, this.sanitizeArgs(arguments, colors.success, '[Success]'));
   },
   /**
    * @function info
@@ -141,7 +141,7 @@ var log = {
     if (!this.enable.tests) {
       return;
     }
-    console.log.apply(console, this.sanitizeArgs(arguments, colors.fail, '[fail]   '));
+    console.log.apply(console, this.sanitizeArgs(arguments, colors.fail, '[Fail]   '));
   },
   /**
    * @function data
