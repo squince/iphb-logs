@@ -15,6 +15,8 @@ colors.setTheme({
   help: 'cyan',
   warn: 'yellow',
   debug: 'white',
+  success: 'green',
+  fail: 'red',
   error: 'red'
 });
 
@@ -33,6 +35,7 @@ var log = {
     debug: false,
     verbose: false,
     warn: true,
+    tests: false,
     input: true,
     info: true,
     data: true,
@@ -119,6 +122,26 @@ var log = {
       return;
     }
     console.log.apply(console, this.sanitizeArgs(arguments, colors.info, '[Info]   '));
+  },
+  /**
+   * @function info
+   * @abstract Info Log Output
+   */
+  success: function() {
+    if (!this.enable.tests) {
+      return;
+    }
+    console.log.apply(console, this.sanitizeArgs(arguments, colors.success, '[Success]   '));
+  },
+  /**
+   * @function info
+   * @abstract Info Log Output
+   */
+  fail: function() {
+    if (!this.enable.tests) {
+      return;
+    }
+    console.log.apply(console, this.sanitizeArgs(arguments, colors.fail, '[fail]   '));
   },
   /**
    * @function data
