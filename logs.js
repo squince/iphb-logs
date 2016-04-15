@@ -45,7 +45,7 @@ var log = {
   },
   /**
    * @function sanitizeArgs
-   * @abstract Used for general formatting and color application of the log
+   * @description Used for general formatting and color application of the log
    *           output
    * @param  {object} originalArguments The special 'argument' object from
    *                                    the original call to the log functions
@@ -67,7 +67,7 @@ var log = {
   },
   /**
    * @function debug
-   * @abstract Debug Log Output
+   * @description Debug Log Output
    */
   debug: function() {
     if (!this.enable.debug || !this.enable.logging) {
@@ -77,7 +77,7 @@ var log = {
   },
   /**
    * @function error
-   * @abstract Error Log Output
+   * @description Error Log Output
    */
   error: function() {
     if (!this.enable.error || !this.enable.logging) {
@@ -87,7 +87,7 @@ var log = {
   },
   /**
    * @function warn
-   * @abstract Warn Log Output
+   * @description Warn Log Output
    */
   warn: function() {
     if (!this.enable.warn || !this.enable.logging) {
@@ -97,7 +97,7 @@ var log = {
   },
   /**
    * @function notice
-   * @abstract Notice Log Output
+   * @description Notice Log Output
    */
   notice: function() {
     if (!this.enable.warn || !this.enable.logging) {
@@ -107,7 +107,7 @@ var log = {
   },
   /**
    * @function input
-   * @abstract Input Log Output
+   * @description Input Log Output
    */
   input: function() {
     if (!this.enable.input || !this.enable.logging) {
@@ -117,7 +117,7 @@ var log = {
   },
   /**
    * @function verbose
-   * @abstract Verbose Log Output
+   * @description Verbose Log Output
    */
   verbose: function() {
     if (!this.enable.verbose || !this.enable.logging) {
@@ -127,7 +127,7 @@ var log = {
   },
   /**
    * @function info
-   * @abstract Info Log Output
+   * @description Info Log Output
    */
   info: function() {
     if (!this.enable.info || !this.enable.logging) {
@@ -137,7 +137,7 @@ var log = {
   },
   /**
    * @function info
-   * @abstract Info Log Output
+   * @description Info Log Output
    */
   success: function() {
     if (!this.enable.tests) {
@@ -147,7 +147,7 @@ var log = {
   },
   /**
    * @function info
-   * @abstract Info Log Output
+   * @description Info Log Output
    */
   fail: function() {
     if (!this.enable.tests) {
@@ -157,7 +157,7 @@ var log = {
   },
   /**
    * @function data
-   * @abstract Data Log Output
+   * @description Data Log Output
    */
   data: function() {
     if (!this.enable.data || !this.enable.logging) {
