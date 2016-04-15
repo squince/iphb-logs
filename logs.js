@@ -14,6 +14,7 @@ colors.setTheme({
   data: 'blue',
   help: 'cyan',
   warn: 'yellow',
+  notice: 'yellow',
   debug: 'white',
   success: 'green',
   fail: 'red',
@@ -35,6 +36,7 @@ var log = {
     debug: false,
     verbose: false,
     warn: true,
+    notice: true,
     tests: false,
     input: true,
     info: true,
@@ -92,6 +94,16 @@ var log = {
       return;
     }
     console.log.apply(console, this.sanitizeArgs(arguments, colors.warn, '[Warn]   '));
+  },
+  /**
+   * @function notice
+   * @abstract Notice Log Output
+   */
+  notice: function() {
+    if (!this.enable.warn || !this.enable.logging) {
+      return;
+    }
+    console.log.apply(console, this.sanitizeArgs(arguments, colors.warn, '[Notice] '));
   },
   /**
    * @function input
