@@ -89,6 +89,16 @@ var log = {
    * @function warn
    * @description Warn Log Output
    */
+  help: function() {
+    if (!this.enable.help || !this.enable.logging) {
+      return;
+    }
+    console.log.apply(console, this.sanitizeArgs(arguments, colors.help, '[Help]   '));
+  },
+  /**
+   * @function warn
+   * @description Warn Log Output
+   */
   warn: function() {
     if (!this.enable.warn || !this.enable.logging) {
       return;
