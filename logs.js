@@ -40,6 +40,7 @@ var log = {
     tests: false,
     input: true,
     info: true,
+    help: true,
     data: true,
     error: true
   },
@@ -58,7 +59,7 @@ var log = {
     args.unshift(label);
     var c = args.length;
     while (c--) {
-      if (typeof(args[c]) === "object") {
+      if (typeof args[c] === "object") {
         args[c] = "\n" + JSON.stringify(args[c], null, 2);
       }
       args[c] = color(args[c]);
