@@ -174,4 +174,5 @@ class Log {
   }
 }
 
-export default new Log();
+const log = new Log();
+module.exports = log;
