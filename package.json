@@ -1,6 +1,6 @@
 {
   "name": "iphb-logs",
-  "version": "0.0.18",
+  "version": "0.0.19",
   "description": "Log Helper",
   "main": "logs.js",
   "scripts": {
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Beginnerprise/iphb-logs",
   "dependencies": {
-    "colors": "^1.1.2"
+    "colors": "1.1.2"
   },
   "devDependencies": {}
 }
