@@ -4,7 +4,7 @@
  */
 
 // Yoink in console colors (we use colors/safe so no overrides)
-import colors from 'colors/safe';
+const colors = require('colors/safe');
 
 class Log {
 
