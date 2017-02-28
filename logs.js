@@ -25,7 +25,7 @@ class Log {
       error: 'red'
     });
 
-    Object.assign(this.enable, {
+    this.enable = {
       logging: true,
       debug: false,
       verbose: false,
@@ -37,7 +37,7 @@ class Log {
       help: true,
       data: true,
       error: true
-    });
+    };
   }
 
   /**
