@@ -27,7 +27,7 @@ class Log {
 
     this.enable = {
       logging: true,
-      debug: false,
+      debug: true,
       verbose: false,
       warn: true,
       notice: true,
